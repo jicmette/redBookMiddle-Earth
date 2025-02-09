@@ -1,0 +1,28 @@
+{
+  "name": "redbookmiddle-earth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview",
+    "lint": "eslint *.js src/**/*.js",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jicmette/redBookMiddle-Earth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jicmette/redBookMiddle-Earth/issues"
+  },
+  "homepage": "https://github.com/jicmette/redBookMiddle-Earth#readme",
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}

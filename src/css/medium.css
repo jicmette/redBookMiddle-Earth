@@ -1,0 +1,13 @@
+@media (min-width: 36em) and (max-width: 62.37em) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .svg-size {
+    height: 50px;
+    }
+
+    #page-board {
+        grid-template-columns: repeat(3, 1fr);
+      }
+}
