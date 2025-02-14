@@ -196,7 +196,7 @@ hr {
 
 #characters {
     display: grid;
-    background-image: url('/images/red-book.png');
+    background-image: url('/images/red-book.webp');
     background-position: top center;
     background-size: cover;
     padding: 1rem;
@@ -243,6 +243,37 @@ hr {
     height: 100%;
     opacity: 0.5; 
     z-index: -1;
+}
+
+/*Shires Cinema Page*/
+.shires-container div {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--background-main-green);
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    height: auto;
+    align-items: center;
+}
+
+.shires-container h2 {
+    color: var(--h1-font-color-dark);
+}
+
+.shires-container p {
+    padding: 1rem;
+    margin: 0;
+}
+
+.shires-container img {
+    display: block;
+    width: 80%;
+    border-radius: 1.5rem;
+    margin: 1rem auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    
 }
 
 footer {

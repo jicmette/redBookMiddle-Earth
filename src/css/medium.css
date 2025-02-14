@@ -1,13 +1,22 @@
 @media (min-width: 36em) and (max-width: 62.37em) {
-    header h1 {
-        font-size: 2rem;
-    }
+  header h1 {
+    font-size: 2rem;
+  }
 
-    .svg-size {
+  .svg-size {
     height: 50px;
-    }
+  }
 
-    #page-board {
-        grid-template-columns: repeat(3, 1fr);
-      }
+  #page-board {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .shires-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    height: auto;
+    align-items: center;
+  }
 }

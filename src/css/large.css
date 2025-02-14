@@ -29,4 +29,13 @@
   #page-board {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .shires-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    height: auto;
+    align-items: center;
+}
 }
