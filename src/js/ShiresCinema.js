@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             movieElement.classList.add('movie');
             movieElement.innerHTML = `
             <h2>${movie.name}</h2>
-            <img src="/images/${movie.name}.webp" alt="${movie.name}">
+            <img src="images/${movie.name}.webp" alt="${movie.name}">
             <p><b>Runtime:</b> ${movie.runtimeInMinutes} minutes</p>
             <p><b>Budget:</b> $${movie.budgetInMillions} million</p>
             <p><b>Box Office Revenue:</b> $${movie.boxOfficeRevenueInMillions} million</p>
