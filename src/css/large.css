@@ -19,8 +19,9 @@
 
   .svg-size {
     height: 60px;
-    }
+  }
 
+  /*Home Page*/
   #hero {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -30,6 +31,8 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  /*Shire's Cinema Page*/
+
   .shires-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -37,5 +40,5 @@
     padding: 1rem;
     height: auto;
     align-items: center;
-}
+  }
 }
