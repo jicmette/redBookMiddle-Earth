@@ -81,14 +81,11 @@ a:hover {
     color: var(--hover-color);
 }
 
-button {
+.a-sections {
     background-color: var(--background-main-green);
-    color: var(--h1-font-color-dark);
-    border: none;
     border-radius: 1.5rem;
-    padding: .75rem 1.5rem; 
-    margin: 1rem;
-    font-size: 1rem;
+    padding: .75rem; 
+    margin: 0;
     cursor: pointer;
     text-align: center;
     font-family: var(--font-family-body);
@@ -96,16 +93,12 @@ button {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-button:hover {
+.a-sections:hover {
     background-color: var(--hover-color);
     color: var(--font-body-color-dark);
     transform: translateY(-2px); 
 }
 
-button:active {
-    transform: translateY(0); 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
-}
 
 #hero {
     display: grid;
@@ -123,8 +116,6 @@ button:active {
     font-size: 2rem;
     text-align: center;
 }
-
-
 
 #hero img {
     display: block;
@@ -195,7 +186,6 @@ hr {
 }
 
 #characters {
-    display: grid;
     background-image: url('/images/red-book.webp');
     background-position: top center;
     background-size: cover;
