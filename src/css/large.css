@@ -31,6 +31,16 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  /*Character Page*/
+  #character-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    height: auto;
+    align-items: center;
+  }
+
   /*Shire's Cinema Page*/
 
   .shires-container {
