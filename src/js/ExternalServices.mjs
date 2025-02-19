@@ -23,3 +23,13 @@ export async function getData(endpoint) {
 }
 
 
+//Gets the quotes for a specific character
+export async function getQuotes(characterId) {
+    try {
+        return await getData(`character/${characterId}/quote`);
+    } catch (error) {
+        console.error('Error fetching quotes:', error);
+    }
+}
+
+

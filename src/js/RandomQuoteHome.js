@@ -19,7 +19,7 @@ export async function fetchQuote() {
         // Fetch character name
         const characterName = await getCharacterName(randomQuote.character);
         const quoteElement = document.getElementById('daily-quote');
-        quoteElement.innerHTML = `"${randomQuote.dialog}"`;
+        quoteElement.innerHTML = `${randomQuote.dialog}`;
         const characterElement = document.getElementById('quote-character');
         characterElement.innerHTML = `- ${characterName}`;
     } else {

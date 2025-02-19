@@ -86,6 +86,10 @@ class LotRCharacters {
   
 }
 
+
+//Export the LotRCharacters class
+export { LotRCharacters };
+
 // Create an instance of the LotRCharacters class
 
 new LotRCharacters();

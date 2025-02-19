@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/small.css" />
     <link rel="stylesheet" href="/css/medium.css" />
     <link rel="stylesheet" href="/css/large.css" />
-    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/ElvenLoreTreasury.js"></script>
   </head>
   <body>
     <header>
@@ -20,15 +20,25 @@
       <h1>The Red Book of Middle-earth</h1>
     </header>
     <main>
-      <ul id="pages-ul">
-        <li>
-          <a href="../character-compendium/index.html">Characters Compendium</a>
-        </li>
-        <li><a href="../shire-cinema/index.html">Shire's Cinema</a></li>
-      </ul>
-      <h1>Elven Lore Treasury</h1>
 
-      <section id="elven-lore-container"></section>
+      <div id="flex-menu">
+        <a class="a-sections" href="../character-compendium/index.html">Characters Compendium</a>
+        <a class="a-sections" href="../shire-cinema/index.html">Shire's Cinema</a>
+      </div>
+        
+      <h1>Elven Lore Treasury</h1>
+      <p>Discover the wisdom and bravery of your favorite characters from the Lord of the Rings universe. This page brings together iconic quotes, offering insights into the profound world of Middle-earth. Simply select a character from the dropdown menu to explore their memorable words and immerse yourself in the timeless lore.</p>
+
+      <section id="elven-lore-container">
+
+        <select id="character-dropdown">
+            <option value="">Select a character</option>
+        </select>
+        <h1 id="character-name"></h1>
+
+        <ul id="quotes-list"></ul>
+
+      </section>
 
       <section id="music">
         <h2>Transport yourself to the Shire with this enchanting melody!</h2>

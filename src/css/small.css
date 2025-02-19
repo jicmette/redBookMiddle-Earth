@@ -2,19 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --background-color-dark: rgb(24, 24, 23);
+  --body-color-dark: rgb(24, 24, 23);
   --background-main-green: rgb(5, 40, 1);
   --font-body-color-dark: rgb(241, 241, 234);
-  --h1-font-color-dark: rgb(255, 215, 0);
+  --h1-font-color-dark: rgb(212, 160, 23);
+  --hover-color: rgb(179, 108, 17);
+  --a-links: rgb(212, 160, 23);
+  --favorites-background: rgb(64, 24, 16);
   --font-family-h1-h2-h3: "Playfair Display", serif;
   --font-family-body: "Roboto Condensed", sans-serif;
-  --hover-color: rgb(179, 108, 17);
-  --a-links: rgb(255, 215, 0);
-  --favorites-background: rgb(64, 24, 16);
 }
 
 body {
-  background-color: var(--background-color-dark);
+  background-color: var(--body-color-dark);
   color: var(--font-body-color-dark);
   font-family: var(--font-family-body);
   font-size: 1em;
@@ -23,10 +23,11 @@ body {
 }
 
 p {
-  margin: 1rem 0;
+  margin: 1rem auto;
   color: var(--font-body-color-dark);
   font-size: 1rem;
   padding: 1em;
+  width: 80%;
 }
 
 h1 {
@@ -44,7 +45,7 @@ h3 {
 
 header {
   display: grid;
-  background-color: var(--background-color-dark);
+  background-color: var(--body-color-dark);
   font-weight: bolder;
   margin: 1rem;
   padding: 1rem;
@@ -83,24 +84,20 @@ a:hover {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   bottom: 0;
   padding: 2rem;
-  text-align: left;
   line-height: 1rem;
-  font-size: 0.5rem;
 }
 
 footer p {
   padding: 0.5rem;
+  font-size: 0.875rem;
 }
 
-.hover-effect img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-effect img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.hover-effect {
+  padding: 1rem;
 }
 
 #honor-to {
@@ -155,8 +152,7 @@ footer p {
 
 #quote-character {
   font-style: italic;
-  margin: 0;
-  padding: 0;
+  margin: 1rem auto;
 }
 
 #daily-quote-section img {
@@ -226,30 +222,115 @@ footer p {
 }
 
 .a-sections:hover {
-  background-color: var(--hover-color);
-  color: var(--font-body-color-dark);
+  background-color: #d4a017;
+  color: var(--body-color-dark);
   transform: translateY(-2px);
 }
 
-/*Links to other pages*/
+/*Link menu to other pages*/
 
-#pages-ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+#flex-menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
   padding: 1rem;
-  list-style-type: none;
-  margin: 0;
-  text-align: center;
-  align-items: center;
 }
 
-#pages-ul li {
-  background-color: var(--background-main-green);
-  color: var(--font-body-color-dark);
+/*Character's Page*/
+
+#character-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+label {
+  background-color: var(--a-links);
+  color: var(--body-color-dark);
+  padding: 1rem 2rem;
   border-radius: 1.5rem;
-  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+#character-info {
+  background-color: var(--background-main-green);
   margin: 1rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+#character-info p {
+  line-height: 1.5rem;
+  padding: 1rem;
+  margin: 0.5rem auto;
+}
+
+#favorites-list {
+  background-color: var(--favorites-background);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.favorite-item p {
+  margin: 0;
+}
+
+.favorite-item:last-child {
+  border-bottom: none;
+}
+
+#favorite-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: var(--a-links);
+  color: var(--body-color-dark);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#favorite-btn:hover {
+  transform: translateY(-2px);
+}
+
+#favorite-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.remove-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: var(--a-links);
+  color: var(--body-color-dark);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: rgb(138, 15, 15);
+  color: var(--font-body-color-dark);
 }
 
 /*Shire's Cinema Page*/
@@ -290,96 +371,40 @@ footer p {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-/*Character's Page*/
-
-#character-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 1rem;
-    gap: 2rem;
-}
-
-label {
-  font-weight: bold;
-  font-size: 16px;
-  color: #ffffff;
-  background-color: var(--hover-color); /* Green background */
-  padding: 10px 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-select {
-  padding: 1rem;
-  font-size: 1rem;
-  margin-bottom: 2rem;
-}
-
-#character-info {
+/*Elven Lore Treasury Page*/
+#elven-lore-container {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: var(--background-main-green);
-  margin: 1rem;
-  padding: 1rem;
   border-radius: 1.5rem;
-}
-
-#character-info p {
-  line-height: 1.5rem;
   padding: 1rem;
-  margin: 0;
-}
-
-#favorites-list {
-  background-color: var(--favorites-background);
   margin: 1rem;
-  padding: 1rem;
-  border-radius: 1.5rem;
-}
-
-.favorite-item {
-  display: flex;
-  justify-content: space-between;
+  height: auto;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
 }
 
-.favorite-item p {
-  margin: 0;
+#character-dropdown {
+  padding: 1rem;
+  margin: 1rem;
 }
 
-.favorite-item:last-child {
-  border-bottom: none;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-#favorite-btn  {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--hover-color);
-    color: var(--font-body-color-dark);
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#quotes-list li {
+  background-color: #305229;
+  color: var(--font-body-color-dark);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-#favorite-btn:active {
-    transform: translateY(2px); 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+#quotes-list li:hover {
+  background-color: var(--body-color-dark);
+  color: var(--font-body-color-dark);
+  transform: translateY(-3px);
 }
-
-.remove-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--hover-color);
-    color: var(--font-body-color-dark);
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .remove-btn:hover {
-    background-color: rgb(138, 15, 15); 
-  }

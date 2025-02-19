@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/small.css" />
     <link rel="stylesheet" href="../css/medium.css" />
     <link rel="stylesheet" href="../css/large.css" />
-    <script type="module" src="/js/CharactersCompendium"></script>
+    <script type="module" src="/js/CharactersCompendium.js"></script>
   </head>
   <body>
     <header>
@@ -21,11 +21,13 @@
     </header>
 
     <main>
-      <ul id="pages-ul">
-        <li><a href="../elven-lore/index.html">Elven Lore Treasury</a></li>
-        <li><a href="../shire-cinema/index.html">Shire's Cinema</a></li>
-      </ul>
+      <div id="flex-menu">
+        <a class="a-sections" href="../elven-lore/index.html">Elven Lore Treasury</a>
+        <a class="a-sections" href="../shire-cinema/index.html">Shire's Cinema</a>
+      </div>
+        
       <h1>Characters Compendium</h1>
+      <p>Explore the diverse world of characters within this compendium. Select a character from the dropdown menu to uncover detailed information about their background, race, and unique attributes. Save some of your favorites!</p>
 
       <label for="characters-label">Choose a character:</label>
       <select id="characters-label">

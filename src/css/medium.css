@@ -3,6 +3,12 @@
     font-size: 2rem;
   }
 
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .svg-size {
     height: 50px;
   }
@@ -11,7 +17,6 @@
   #page-board {
     grid-template-columns: repeat(3, 1fr);
   }
-
 
   /*Character Page*/
   #character-section {
@@ -33,5 +38,3 @@
     align-items: center;
   }
 }
-
-
